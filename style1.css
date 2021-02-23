@@ -11,11 +11,11 @@ body{
   /* style of a header */
 .header{
   background-color: #f1f1f1;
-  color: red;
+  color: green;
   font-weight: bold;
   padding: 20px;
   text-align: center;
-  background-image: url("comp.png");
+  background-image: url("images/time.jpeg");
   /* opacity: 0.75; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +24,7 @@ body{
   /* style of links */
 .topnav{
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
   padding: 20px;
 }
   /* links' style*/
@@ -62,13 +62,13 @@ body{
     width: 100%;
   }
 }
-.opi{
+/* .opi{
   width: 50px;
   height: 50px;
   background-color: red;
   transition-duration: 5000ms;
   transform: translate(200px, -50px) scale(-2);
-  /* scale(2,3)skewX(45deg); */
+  scale(2,3)skewX(45deg); */
 }
 
 #opi{
