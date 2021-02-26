@@ -87,13 +87,3 @@ console.log("z");
 lizzieTheCat.meow();
 lizzieTheCat.eat('brown mushy stuff');
 lizzieTheCat.sleep(10);
-
-
-// <div class="container">
-//   <img src= ${veg.photo} alt="${veg.item}" class="column">
-//   </div>
-//   <div class="column">
-//   <h2>${veg.item}</h2>
-//   <h3>${veg.type} | ${veg.location}</h3>
-//   <p>Price: ${veg.price}</p>
-// </div>

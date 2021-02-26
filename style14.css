@@ -1,19 +1,11 @@
 img{
   width: 30%;
 }
-.columnOK{
-  float: left;
-  width: 50%;
-  padding: 15px;
-}
-.container {
-  display: flex;
-  justify-content: space between;
-}
+.container, #demo1 {
 
-.column {
-  display: inline block;
-  padding: 0.5em;
-  display: block;
-  width: 50%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+h1{
+  text-align: center;
 }

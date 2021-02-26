@@ -23,7 +23,7 @@ for (let i=0; i< veggies.length; i++){
   <div class="container">
     <img src= ${veg.photo} alt="${veg.item}">
     </div>
-    <div>
+    <div class="container">
     <h2>${veg.item}</h2>
     <h3>${veg.type} | ${veg.location}</h3>
     <p>Price: ${veg.price}</p>
@@ -33,6 +33,7 @@ for (let i=0; i< veggies.length; i++){
 }
 
 function getValue(){
+   document.getElementById("receipt").innerHTML = "Receipt";
    var userInput = document.getElementById('potatoUser').value;
    var potato = Number(userInput) * `${items.potato}`;
    document.getElementById("quantityPotato").innerHTML = "Potato: " + "$" + potato;
