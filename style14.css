@@ -1,8 +1,19 @@
 img{
-  width: 200px;
+  width: 30%;
 }
 .columnOK{
   float: left;
-  width: 33.33%;
+  width: 50%;
   padding: 15px;
+}
+.container {
+  display: flex;
+  justify-content: space between;
+}
+
+.column {
+  display: inline block;
+  padding: 0.5em;
+  display: block;
+  width: 50%;
 }
