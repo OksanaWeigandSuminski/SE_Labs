@@ -1,0 +1,18 @@
+img.image, #imageReplace, #imageReplace2{
+  width: 50%;
+}
+.container{
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  color: red;
+}
+/* #imageReplace3{
+  width: 800px;
+} */
