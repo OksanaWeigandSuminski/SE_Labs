@@ -1,10 +1,10 @@
 img{
   width: 30%;
 }
-.container, #demo1 {
-
+.container, .btnR, .paragraphs {
   margin-left: 50px;
   margin-right: 50px;
+  text-align: center;
 }
 h1{
   text-align: center;
