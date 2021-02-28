@@ -6,13 +6,23 @@ img.image, #imageReplace, #imageReplace2{
   margin-right: 50px;
   text-align: center;
 }
-a{
+button{
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid darkBlue;
   padding: 10px;
   border-radius: 5px;
-  color: red;
+  color: white;
+  background-color: blue;
 }
-/* #imageReplace3{
-  width: 800px;
-} */
+input#upload-image, input#subbut{
+  text-decoration: none;
+  border: 1px solid darkBlue;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: blue;
+}
+h3{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
+}

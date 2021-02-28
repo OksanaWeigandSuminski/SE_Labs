@@ -1,4 +1,4 @@
-//Ninja
+// //Ninja
 var user = prompt("Hello there... Who are you?");
 var c = confirm("Do you want to play Ninja?");
 if (c){
@@ -10,7 +10,7 @@ if (c){
   //alert("well " + user + " " + ninja.ninjaName + " with " + ninja.beltColor + " belt, has the power of: " + ninja.powers[0] + " the power of: " + ninja.powers[1] + " the power of: " + ninja.powers[2] + " let's play");
   document.getElementById("message").innerHTML = user + ", " + "meet " + ninja.ninjaName + " with " + ninja.beltColor + " belt. He has the power of " + ninja.powers[0] + ", the power of " + ninja.powers[1] + ", and the power of " + ninja.powers[2] + ". Let's play!"
 }
-//document.getElementById("message").innerHTML = `GoodBye, ${user}!!!`;
+// //document.getElementById("message").innerHTML = `GoodBye, ${user}!!!`;
 
 function changeImage(element) {
 document.getElementById('imageReplace').src = element;

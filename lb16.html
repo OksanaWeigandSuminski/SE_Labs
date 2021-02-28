@@ -3,14 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>NINJA Game</title>
+    <script src="jQlab.js"></script>
     <link href="lb15.css" rel="stylesheet">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+</style>
   </head>
   <body>
     <center>
+    <div id="ninja">
     <img src="images/ninja.jpg" alt="ninja" class="image">
+    </div>
     <h2 id="message"></h2>
     </center>
     <div class="container">
+      <!-- user image start-->
+      <div id="oldImg">
+      <h3>Upload your own NINJA!</h3>
+      <img src="images/upload.png" alt="ninja" style="width: 300px;">
+      </div>
+      <div id="image-wrapper"></div>
+      <input id="upload-image" type="file" accept=".jpg"/>
+      <input id="subbut" type="submit" value="Submit"/>
+      <!-- user image end-->
       <div class="house">
         <h3>Where does ninja live?</h3>
         <img src="images/houseIcon.png" alt="Images" id="imageReplace" class="icons"/><br /><br><br>
@@ -47,6 +62,7 @@
         <button onclick="changeImage5('images/catW.jpeg');">Option 3</button><br><br>
       </div>
     </div>
-    <script src="lb15.js"></script>
+    <script src="lb16.js"></script>
+    <script src="practiceJQ.js"></script>
   </body>
 </html>
