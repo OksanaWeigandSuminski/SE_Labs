@@ -38,3 +38,11 @@ $("#subbut").click(function () {
         image.src = _URL.createObjectURL(file);
     }
 });
+$(document).ready(function(){
+  $("#size").click(function){
+    $("#divv").animate({
+      height: "400px",
+      width: "400px",
+    }, 1500);
+  },
+});

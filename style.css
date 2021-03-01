@@ -56,7 +56,7 @@ body{
   padding: 15px;
 }
 /* responsive layout */
-@media screen and (max-width:500px;){
+@media screen and (max-width:500px){
   .columnOK, .column{
     width: 100%;
   }
