@@ -1,6 +1,6 @@
 {"dogs":[
   {"hair": "brown", "eyes": "blue", "breed": "doverman"},
-  {"hair": "gold", "eyes": "yellow", "breed": "doverman"},
-  {"hair": "red", "eyes": "green", "breed": "doverman"},
-  {"hair": "brown", "eyes": "green", "breed": "doverman"}
-]};
+  {"hair": "gold", "eyes": "yellow", "breed": "samoyan"},
+  {"hair": "red", "eyes": "green", "breed": "corgi"},
+  {"hair": "brown", "eyes": "green", "breed": "shi-tzu"}
+]}

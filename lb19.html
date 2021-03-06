@@ -3,36 +3,70 @@
   <head>
     <meta charset="utf-8">
     <title>AJAX</title>
+    <script src="jQlab.js"></script>
+    <script src="lb19.json"></script>
   </head>
   <body>
-    <div id="demo">
-      <h2>Let AJAX change this text</h2>
-      <p>AJAX just uses a combination of: A broswer built-in XMLHttpRequest object (to request data from a web server) Javascript and HTML DOM (to display or use the data)</p>
-      <ol>readyState
-        <ul>readyState holds the status of the (angle)XMLHttpRequest class="li"(/angle)(angle)XMLHttpRequest(/angle)
-          <li> responsive to user actions</li>
-            <li> responsive to user actions</li>
-              <li> responsive to user actions</li>
-                <li> responsive to user actions</li>
-                </ul>
-      </ol>
-      <button type="button" onclick="loadDoc()">Change Content</button>
-    </div>
+  <div id="demo"> Classwork</div>
 
-    <script>
-      function loadDoc(){
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function(){
-          if(this.readyState == 4 && this.status == 200){
-            document.getElementById("demo").innerHTML = this.responseText;
-          }
-        };
-        xhttp.open("GET", "ajax_info.txt", true);
-        //xhttp.open("GET", "lb19.json", true);
-        xhttp.send();
+    <button type="button" onclick="loadDoc()">Change Content</button>
+    <button type="button" id="button" onclick="loadDoc()">Button</button>
+  <div>
+    <h2>Let AJAX change this text</h2>
+    <p>AJAX just uses a combination of:
+  <br>
+  A browser built-in XMLHttpRequest object (to request data from a web server)
+  JavaScript and HTML DOM (to display or use the data)</p>
+  <br>
+  <ul>ReadyState
+    <ul>readyState	Holds the status of the (angle) XMLHttpRequest class="li" (angle)XMLHttpRequest (angle)
+    <li>
+  0: request not initialized</li><li>
+  1: server connection established
+  2: request received</li><li>
+  3: processing request</li><li>
+  4: request finished and response is ready</li></ul></ul>
+  <ul>vstatus	Returns the status-number of a request
+  <li>200: "OK"</li><li>
+  <li>403: "Forbidden"</li><li>
+  <li>404: "Not Found"</li><li>
+  For a complete list go to the Http Messages Reference</li></ul>
 
-      }
-    </script>
+
+  </div>
+
+
+  <script>
+    function loadDoc() {
+      // var xhttp= new XMLHttpRequest();//hey im here!!!
+      // xhttp.onreadystatechange = function() {
+        // if (this.readyState == 4 && this.status == 200) {
+          //console.log(this.dogs[1].breed)- Aleef
+          document.getElementById("demo").innerHTML = this.dogs[0].breed+" "+ this.dogs[0].hair+" "+ this.dogs[0].eyes;//this.responseText;
+
+        // }
+      // };
+          alert(dogs[0].breed);
+      //xhttp.open("GET", "yyy.txt", true);
+      // xhttp.open("GET", "zzz.json", true);
+      // xhttp.send();
+    }
+
+    $(document).ready(function(){
+      $("#button").click(function(){
+        $.post("xx.asp",
+        {
+          name: "Donald Duck",
+          city: "Duckburg"
+        },
+        function(data, status){
+          alert("Data: " + data + "\nStatus: " + status);
+        });
+      });
+    });
+
+
+  </script>
   </body>
 
 </html>
