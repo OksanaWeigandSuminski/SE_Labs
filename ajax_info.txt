@@ -1,0 +1,3 @@
+AJAX is not a programming language.
+When these technologies are combined in the Ajax model, web applications are able to make quick, incremental updates to the user interface without reloading the entire browser page.
+This makes the application faster and more responsive to user actions.

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AJAX</title>
+  </head>
+  <body>
+    <div id="demo">
+      <h2>Let AJAX change this text</h2>
+      <p>AJAX just uses a combination of: A broswer built-in XMLHttpRequest object (to request data from a web server) Javascript and HTML DOM (to display or use the data)</p>
+      <ol>readyState
+        <ul>readyState holds the status of the (angle)XMLHttpRequest class="li"(/angle)(angle)XMLHttpRequest(/angle)
+          <li> responsive to user actions</li>
+            <li> responsive to user actions</li>
+              <li> responsive to user actions</li>
+                <li> responsive to user actions</li>
+                </ul>
+      </ol>
+      <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+
+    <script>
+      function loadDoc(){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function(){
+          if(this.readyState == 4 && this.status == 200){
+            document.getElementById("demo").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", "ajax_info.txt", true);
+        //xhttp.open("GET", "lb19.json", true);
+        xhttp.send();
+
+      }
+    </script>
+  </body>
+
+</html>
