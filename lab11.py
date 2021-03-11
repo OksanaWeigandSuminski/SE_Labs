@@ -587,3 +587,14 @@ if start==1:
 
 else:
   print("Aww, oky! Maybe next time.")
+
+
+  #lab 20
+minsInDay = 60*24
+days, mins = divmod(5345, minsInDay)
+print(days,"days", mins, "mins")
+
+#or
+days, mins = divmod(5345, 1440)
+print(days,"days", mins, "mins")
+#outputs 3 days 17 hours 5 mins
