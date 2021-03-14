@@ -126,3 +126,11 @@ a:active{
   color: darkGreen;
   font-size: 40px;
 }
+th{
+  color: #343a40;
+  text-align: center;
+  border: solid #343a40 20px;
+}
+tr{
+   border: solid #343a40 20px;
+}
